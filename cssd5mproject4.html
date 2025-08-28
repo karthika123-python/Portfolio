@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header{
+            color: white;
+            background-color: salmon;
+            padding: 20px;
+            margin-left: 0;
+        }
+        main{
+            background-color: snow;
+            margin: 2rem;
+            padding: 30px;
+            text-align: left;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            background-color: white;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            padding: 30px;
+            text-align: left;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <p>Sharing Thoughts & Ideas</p>
+    </header>
+    <main>
+        <article class="box">
+                <h2>Blog Post 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, pariatur!</p>
+        </article>
+        <article class="box">
+                <h2>Blog Post 2</h2>
+                <p>Nostrum, ab, quod laudantium consectetur. Tempore perspiciatis eligendi voluptatibus!</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy 2025 My Blog. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
