@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Gallery</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .gallery{
+            background-color: aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .image{
+           border-radius: 8px;
+           border: 3px solid #ccc;
+           background-color: honeydew;
+           width: 300px;
+           height: 300px;
+           padding: 20px;
+           box-shadow: 8px 8px 8px #ccc;
+           text-align: center;
+           transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        figcaption{font-size: 24px;font-weight: bold;text-align: center;margin-top: 10px;}
+        .image:hover{
+            transform: scale(1.05);
+            background-color: mistyrose;
+            box-shadow: 8px 8px 16px rgba(0, 0, 0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;color: white;background-color: lightblue;padding: 20px;text-shadow: 2px 2px 2px #ccc;font-size: 32px;">Flexbox Gallery</h2>
+    <div class="gallery">
+        <div class="image">
+            <img src="lion.jfif" alt="Lion">
+            <figcaption>Image 1</figcaption>
+        </div>
+        <div class="image">
+            <img src="tiger.jfif" alt="Tiger">
+            <figcaption>Image 2</figcaption>
+        </div>
+        <div class="image">
+            <img src="giraffe.jfif" alt="Giraffe">
+            <figcaption>Image 3</figcaption>
+        </div>
+        <div class="image">
+            <img src="pig.jfif" alt="Pig">
+            <figcaption>Image 4</figcaption>
+        </div>
+        <div class="image">
+            <img src="fox.jfif" alt="Fox">
+            <figcaption>Image 5</figcaption>
+        </div>
+        <div class="image">
+            <img src="deer.png" alt="Deer"  width="300px" height="200px">
+            <figcaption>Image 6</figcaption>
+        </div>
+        <div class="image">
+            <img src="kangaroo.jfif" alt="Kangaroo">
+            <figcaption>Image 7</figcaption>
+        </div>
+        <div class="image">
+            <img src="zebra.jfif" alt="Zebra">
+            <figcaption>Image 8</figcaption>
+        </div>
+        <div class="image">
+            <img src="polarbear.jpg" alt="Bear" width="300px" height="200px">
+            <figcaption>Image 9</figcaption>
+        </div>
+        <div class="image">
+            <img src="horse.jfif" alt="Horse">
+            <figcaption>Image 10</figcaption>
+        </div>
+    </div>
+</body>
+</html>
