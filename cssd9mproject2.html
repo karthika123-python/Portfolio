@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .pricing-table {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .plan {
+        background: white;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .plan:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .plan-header {
+        background: #333;
+        color: white;
+        padding: 15px;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    .price {
+        color: green;
+        font-size: 1.5em;
+        margin: 15px 0;
+        font-weight: bold;
+    }
+
+    .features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px;
+    }
+
+    .features li {
+        padding: 8px 0;
+    }
+
+    .choose-plan {
+        display: inline-block;
+        background: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-bottom: 20px;
+        transition: background 0.3s;
+    }
+
+    .choose-plan:hover {
+        background: #218838;
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9em;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    
+<header>
+    <h1>Pricing Plans</h1>
+</header>
+
+<section class="pricing-table">
+    <div class="plan">
+        <div class="plan-header">Basic</div>
+        <div class="price">₹999<span>/month</span></div>
+        <ul class="features">
+            <li> ✔ 10GB Storage</li>
+            <li> ✔ Email Support</li>
+            <li> ✘ Custom Domain</li>
+        </ul>
+        <a href="#" class="choose-plan">Choose Plan</a>
+    </div>
+
+    <div class="plan">
+        <div class="plan-header">Standard</div>
+        <div class="price">₹1999<span>/month</span></div>
+        <ul class="features">
+            <li>  ✔ 50GB Storage</li>
+            <li>  ✔ Priority Support</li>
+            <li>  ✔ Custom Domain</li>
+        </ul>
+        <a href="#" class="choose-plan">Choose Plan</a>
+    </div>
+
+    <div class="plan">
+        <div class="plan-header">Premium</div>
+        <div class="price">₹2999<span>/month</span></div>
+        <ul class="features">
+            <li>  ✔ Unlimited Storage</li>
+            <li>  ✔ 24/7 Support</li>
+            <li>  ✔ Custom Domain & Analytics</li>
+        </ul>
+        <a href="#" class="choose-plan">Choose Plan</a>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Pricing Table. All rights reserved.
+</footer>
+</body>
+</html>
